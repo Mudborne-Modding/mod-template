@@ -33,7 +33,8 @@ return {
 
   -- called on mouse use, type is 'pressed' or 'released'
   -- btn is 1 for left-click, 2 for right-click, 3 for middle-click
-  mouse = function(type, btn) end,
+  -- phase is 'before' for before game click code, and 'after' for when all game click code is run
+  mouse = function(type, btn, phase) end,
 
   -- called on keypress https://love2d.org/wiki/love.keypressed
   key = function(key, scancode, is_repeat) end,
